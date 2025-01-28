@@ -21,7 +21,7 @@ repository               : "ottoxin/ottoxin.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile_1.png"
   name             : "Otto Xin"
   pronouns         : "He/him/his"  
   bio              : "Incoming first year PhD student"
