@@ -24,10 +24,7 @@ author:
   avatar     : "profile_6.png"
   name       : "Otto Xin"
   pronouns   : "He/him/his"  
-  bio: >
-    Incoming PhD student in Media, Technology, and Society  
-    School of Communication  
-    Northwestern University
+  bio: "Incoming PhD student in Media, Technology, and Society<br>School of Communication<br>Northwestern University"
   location   : "Evanston, IL"
   employer   : # "Red Brick University"
   uri        : # URL
