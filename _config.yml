@@ -24,7 +24,7 @@ author:
   avatar     : "profile_6.png"
   name       : "Otto Xin"
   pronouns   : "He/him/his"  
-  bio        : |
+  bio: >
     Incoming PhD student in Media, Technology, and Society  
     School of Communication  
     Northwestern University
