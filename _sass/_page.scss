@@ -49,6 +49,8 @@
 }
 
 .page__content {
+  width: 100%; /* Adjust the value as needed */
+  margin: 0 auto; 
 
   h2 {
     padding-bottom: 0.5em;
