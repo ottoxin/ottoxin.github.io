@@ -6,6 +6,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<style>
+  .page-content {
+    width: 100%;
+  }
+</style>
 
 你好(Hello)! My name is Haohang Xin, feel free to call me Otto. I'm currently a senior pursuing dual degrees in **Journalism (Honors)** and **Data Science** at the University of Wisconsin-Madison. Starting Fall 2025, I’ll begin my Ph.D. in **Media, Technology, and Society** in School of Communication at Northwestern University, advised by Professor [Yingdan Lu](https://communication.northwestern.edu/faculty/yingdan-lu.html).
 
