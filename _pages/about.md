@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-**你好 (Hello)!** I am **Haohang “Otto” Xin**, currently a senior at the University of Wisconsin Madison pursuing dual degrees in **Journalism (Honors)** and **Data Science**. Starting in Fall 2025, I will begin my Ph.D. in **Media, Technology, and Society** at Northwestern University’s School of Communication, where I will be advised by Professor [Yingdan Lu](https://communication.northwestern.edu/faculty/yingdan-lu.html).
+**你好 (Hello)!** I am **Haohang Xin**, or you can call me **Otto**, currently a senior at the University of Wisconsin-Madison pursuing dual degrees in **Journalism (Honors)** and **Data Science**. Starting in Fall 2025, I will begin my Ph.D. in **Media, Technology, and Society** at Northwestern University’s School of Communication, where I will be advised by Professor [Yingdan Lu](https://communication.northwestern.edu/faculty/yingdan-lu.html).
 
 My research focuses on how digital platforms and algorithms shape public discourse, especially in the context of misinformation, propaganda, and polarizing debates. I am particularly interested in the structure of online echo chambers and the role large language models (LLMs) play in moderating or amplifying contentious content. My work has examined how false information circulates across social networks, how partisan cues become reinforced through visual and textual narratives, and how platform design influences user engagement and perception.
 
