@@ -21,14 +21,14 @@ repository               : "ottoxin/ottoxin.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar     : "profile_6.png"
+  avatar     : "profile_7.png"
   name       : "Otto Xin"
   pronouns   : "He/him/his"  
-  bio: "Incoming PhD student in Media, Technology, and Society<br>School of Communication<br>Northwestern University"
+  bio: "PhD student in Media, Technology, and Society<br>School of Communication<br>Northwestern University"
   location   : "Evanston, IL"
   employer   : # "Red Brick University"
   uri        : # URL
-  email      : "haohangx@u.northwestern.edu"
+  email      : "haohangxin@u.northwestern.edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
