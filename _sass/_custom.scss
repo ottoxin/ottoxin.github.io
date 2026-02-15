@@ -1,0 +1,74 @@
+/* OpenAI-inspired minimal styling */
+:root {
+  --oa-bg: #f7f7f5;
+  --oa-surface: #ffffff;
+  --oa-text: #111111;
+  --oa-muted: #5f6368;
+  --oa-border: #e5e7eb;
+  --oa-accent: #10a37f;
+}
+
+body {
+  background: var(--oa-bg);
+  color: var(--oa-text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--oa-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--oa-accent);
+}
+
+.masthead {
+  background: rgba(247, 247, 245, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--oa-border);
+}
+
+.masthead__menu-item a {
+  font-weight: 500;
+}
+
+.masthead__menu-item--lg a {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.initial-content,
+.page {
+  background: var(--oa-surface);
+  border: 1px solid var(--oa-border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3 {
+  letter-spacing: -0.02em;
+}
+
+.page__content h1 {
+  font-size: 2rem;
+}
+
+.page__footer,
+.page__meta {
+  color: var(--oa-muted);
+}
+
+@media (max-width: 768px) {
+  .initial-content,
+  .page {
+    padding: 1.25rem;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
