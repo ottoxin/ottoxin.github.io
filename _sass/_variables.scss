@@ -12,25 +12,27 @@ $doc-font-size              : 16;
 $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
+$dm-sans                    : "DM Sans", sans-serif;
+
 /* system typefaces */
-$serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$serif                      : $dm-sans;
+$sans-serif                 : $dm-sans;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
-$sans-serif-narrow          : $sans-serif;
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
+$sans-serif-narrow          : $dm-sans;
+$helvetica                  : $dm-sans;
 
 /* serif typefaces */
-$georgia                    : Georgia, serif;
-$times                      : Times, serif;
-$bodoni                     : "Bodoni MT", serif;
-$calisto                    : "Calisto MT", serif;
-$garamond                   : Garamond, serif;
+$georgia                    : $dm-sans;
+$times                      : $dm-sans;
+$bodoni                     : $dm-sans;
+$calisto                    : $dm-sans;
+$garamond                   : $dm-sans;
 
-$global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
-$caption-font-family        : $serif;
+$global-font-family         : $dm-sans;
+$header-font-family         : $dm-sans;
+$caption-font-family        : $dm-sans;
 
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px

@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am **Haohang Xin**, or you can call me **Otto**. I am a first-year Ph.D. student in [Media, Technology, and Society](https://mts.northwestern.edu/) at the School of Communication, Northwestern University, advised by Dr. [Yingdan Lu](https://communication.northwestern.edu/faculty/yingdan-lu.html).
+My name is **Otto**. I am a first-year Ph.D. student in [Media, Technology, and Society](https://mts.northwestern.edu/) at the School of Communication, Northwestern University, advised by Dr. [Yingdan Lu](https://communication.northwestern.edu/faculty/yingdan-lu.html).
 
 I received my bachelor’s degrees in Journalism (Honors) and Data Science from the University of Wisconsin–Madison, where I was honored with the [James L. Baughman Senior Achievement Award](https://journalism.wisc.edu/student-opportunities/james-baughman-senior-achievement-award/), the highest undergraduate recognition at [School of Journalism and Mass Communication](https://journalism.wisc.edu/).
 
