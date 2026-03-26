@@ -1,0 +1,57 @@
+[site]
+title = "HAOHANG OTTO XIN"
+description = "PhD student in Media, Technology, and Society at Northwestern University."
+favicon = "/favicon.svg"
+last_updated = "March 2025"
+
+[author]
+name = "Otto Xin"
+title = "PhD Student · He/Him"
+institution = "Department of Communication Studies · Northwestern University"
+avatar = "/bio.jpg"
+
+[social]
+email = "haohangxin@u.northwestern.edu"
+location = "Evanston, IL"
+location_url = "https://maps.google.com/?q=Evanston+IL"
+github = "https://github.com/ottoxin"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = false
+switcher = false
+
+[i18n.labels]
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Research"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "Software"
+type = "page"
+target = "software"
+href = "/software"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"
