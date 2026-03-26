@@ -9,9 +9,8 @@ interface AboutProps {
     title?: string;
 }
 
-export default function About({ content, title }: AboutProps) {
-    const messages = useMessages();
-    const resolvedTitle = title || messages.home.about;
+export default function About({ content }: AboutProps) {
+    useMessages();
 
     return (
         <motion.section
