@@ -4,7 +4,7 @@ My research sits at the intersection of communication, computational methods, an
 
 ## Information Manipulation in Digital Environments
 
-How does propaganda, misinformation, and strategic communication circulate across social media platforms, and how do platform architectures amplify or constrain these dynamics? While much of the existing literature focuses on authoritarian regimes, I am equally interested in how information manipulation operates within democratic contexts, where partisan actors, interest groups, and platform incentives interact to distort public discourse. My work traces how visual and textual narratives reinforce partisan cues, how echo chambers emerge and sustain themselves, and how platform design choices shape what users see, believe, and share.
+How does propaganda and strategic communication circulate across social media platforms, and how do platform architectures amplify or constrain these dynamics? While much of the existing literature focuses on authoritarian regimes, I am equally interested in how information manipulation operates within democratic contexts, where partisan actors, interest groups, and platform incentives interact to distort public discourse. My work traces how visual and textual narratives reinforce partisan cues, how echo chambers emerge and sustain themselves, and how platform design choices shape what users see, believe, and share.
 
 ## Computational Methods for Social Science
 

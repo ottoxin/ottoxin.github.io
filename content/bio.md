@@ -4,8 +4,8 @@ I received my bachelor's degrees in Journalism (Honors) and Data Science from th
 
 My research sits at the intersection of communication, computational methods, and AI. Current areas of focus include:
 
-- **Information manipulation in digital environments**: how propaganda and misinformation circulate across platforms, and how platform design shapes what users see and believe
-- **Computational methods for social science**: building transparent, reproducible tools that bridge the gap between computer science and social inquiry
+- **Information manipulation in digital environments**: how propaganda and strategic communication circulate across platforms in both authoritarian and democratic contexts
+- **Computational methods for social science**: building transparent, reproducible tools that bridge the gap between computer science and social science
 - **Generative AI for social science**: evaluating when and how LLM-based simulations can responsibly complement traditional research methods
 - **Agentic AI for research**: designing human-in-the-loop workflows that automate routine tasks while preserving space for genuine insight
 
@@ -13,4 +13,4 @@ As an undergraduate research assistant at UW–Madison's School of Journalism an
 
 I am particularly passionate about developing innovative tools that make computational research more interpretable and accessible. I also build and maintain [open-source software](/software) for research workflows.
 
-In my downtime (when I'm not debugging code or chasing elusive data points), you might find me doing car detailing or camping with my cat Callie.
+In my downtime (when I'm not debugging code or chasing elusive data points), you might find me doing camping, car detailing or cooking with my cat Callie.
