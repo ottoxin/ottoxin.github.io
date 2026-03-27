@@ -18,7 +18,7 @@ export default function About({ content }: AboutProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
         >
-            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed text-[15px]">
+            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed text-base">
                 <ReactMarkdown
                     components={{
                         h1: ({ children }) => <h1 className="text-3xl font-serif font-bold text-foreground mt-8 mb-4">{children}</h1>,
@@ -33,7 +33,7 @@ export default function About({ content }: AboutProps) {
                                 {...props}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-accent font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
+                                className="text-accent font-medium transition-all duration-200 hover:underline"
                             />
                         ),
                         blockquote: ({ children }) => (

@@ -1,14 +1,12 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { cn } from '@/lib/utils';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
-import LanguageToggle from '@/components/ui/LanguageToggle';
 import type { SiteConfig } from '@/lib/config';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 import { useMessages } from '@/lib/i18n/useMessages';
@@ -35,15 +33,7 @@ export default function Navigation({
   const locale = useLocaleStore((state) => state.locale);
   const [scrolled, setScrolled] = useState(false);
   const [activeHash, setActiveHash] = useState('');
-  const [hoveredHref, setHoveredHref] = useState<string | null>(null);
   const messages = useMessages();
-  const navContainerRef = useRef<HTMLDivElement>(null);
-  const [indicatorStyle, setIndicatorStyle] = useState<{
-    left: number;
-    width: number;
-    top: number;
-    height: number;
-  } | null>(null);
 
   const effectiveItems = useMemo(() => {
     if (!i18n.enabled) return items;
@@ -124,39 +114,6 @@ export default function Navigation({
   const getDesktopItemHref = (item: SiteConfig['navigation'][number]) =>
     enableOnePageMode ? `/#${item.target}` : item.href;
 
-  const activeItem = effectiveItems.find((item) => isDesktopItemActive(item)) ?? null;
-  const activeHref = activeItem ? getDesktopItemHref(activeItem) : null;
-  const indicatorHref = hoveredHref ?? activeHref;
-
-  const measureIndicator = useCallback(() => {
-    const container = navContainerRef.current;
-    if (!container || !indicatorHref) {
-      setIndicatorStyle(null);
-      return;
-    }
-    const el = container.querySelector<HTMLElement>(
-      `[data-nav-href="${CSS.escape(indicatorHref)}"]`
-    );
-    if (!el) {
-      setIndicatorStyle(null);
-      return;
-    }
-    setIndicatorStyle({
-      left: el.offsetLeft,
-      width: el.offsetWidth,
-      top: el.offsetTop,
-      height: el.offsetHeight,
-    });
-  }, [indicatorHref]);
-
-  useEffect(() => {
-    measureIndicator();
-  }, [measureIndicator]);
-
-  useEffect(() => {
-    window.addEventListener('resize', measureIndicator);
-    return () => window.removeEventListener('resize', measureIndicator);
-  }, [measureIndicator]);
 
   return (
     <Disclosure as="nav" className="fixed top-0 left-0 right-0 z-50">
@@ -191,33 +148,7 @@ export default function Navigation({
 
                 <div className="hidden lg:block">
                   <div className="ml-10 flex items-center space-x-3">
-                    <div
-                      ref={navContainerRef}
-                      className="relative flex items-baseline space-x-1"
-                      onMouseLeave={() => setHoveredHref(null)}
-                    >
-                      {indicatorStyle && (
-                        <motion.div
-                          className={cn(
-                            'absolute rounded-lg pointer-events-none',
-                            hoveredHref && hoveredHref !== activeHref
-                              ? 'bg-accent/[0.07]'
-                              : 'bg-accent/10'
-                          )}
-                          initial={false}
-                          animate={{
-                            left: indicatorStyle.left,
-                            width: indicatorStyle.width,
-                            top: indicatorStyle.top,
-                            height: indicatorStyle.height,
-                          }}
-                          transition={{
-                            type: 'spring',
-                            stiffness: 400,
-                            damping: 28,
-                          }}
-                        />
-                      )}
+                    <div className="flex items-center space-x-1">
                       {effectiveItems.map((item) => {
                         const isActive = isDesktopItemActive(item);
                         const href = getDesktopItemHref(item);
@@ -226,17 +157,13 @@ export default function Navigation({
                           <Link
                             key={item.target}
                             href={href}
-                            data-nav-href={href}
                             prefetch={true}
                             onClick={() => enableOnePageMode && setActiveHash(`#${item.target}`)}
-                            onMouseEnter={() => setHoveredHref(href)}
                             className={cn(
-                              'relative px-3 py-2 text-base font-medium rounded-lg transition-colors duration-150',
+                              'relative px-3 py-2 text-[15px] font-medium transition-colors duration-150 border-b-[2.5px]',
                               isActive
-                                ? 'text-primary'
-                                : hoveredHref === href
-                                  ? 'text-primary'
-                                  : 'text-neutral-600'
+                                ? 'text-primary border-primary'
+                                : 'text-neutral-500 hover:text-primary border-transparent'
                             )}
                           >
                             {item.title}
@@ -244,14 +171,10 @@ export default function Navigation({
                         );
                       })}
                     </div>
-                    <LanguageToggle i18n={i18n} />
-                    <ThemeToggle />
                   </div>
                 </div>
 
                 <div className="lg:hidden flex items-center space-x-2">
-                  <LanguageToggle i18n={i18n} />
-                  <ThemeToggle />
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-neutral-600 hover:text-primary hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent transition-colors duration-200">
                     <span className="sr-only">{messages.navigation.openMainMenu}</span>
                     <motion.div

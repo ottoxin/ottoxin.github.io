@@ -25,7 +25,7 @@ export default function TextPage({ config, content, embedded = false }: TextPage
                     {config.description}
                 </p>
             )}
-            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed text-[15px]">
+            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed text-base">
                 <ReactMarkdown
                     rehypePlugins={[rehypeRaw]}
                     components={{
